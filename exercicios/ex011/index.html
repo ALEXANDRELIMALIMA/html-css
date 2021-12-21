@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em html5</title>
+</head>
+
+<body>
+    <h1>Imagem dinamica</h1>
+    <!--a cada tamanho de tela o navegador comporta pelo tamanho da foto-->
+    <p>Tente abrir as imagem no seu celular, tablet, computador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/imagem300.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/imagem-700.jpg" type="image/jpg">
+        <img src="imagens/imagem-1000.jpg" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <!--<audio src="midia/intrumental.mp3" controls autoplay> </audio>
+    <p>outra forma de reproduzir</p> 
+-->
+    <audio preload="metadata" autoplay controls>
+        <!--se acionar loop no final do controls reinicia-->
+        <source src="midia/intrumental.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+</html>

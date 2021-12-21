@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping TAgs</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: silver;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 2px 2px black;
+            border-radius: 3px;
+
+        }
+
+        /* (>a) filho de nav -> esta dentro de Nav*/
+        nav>a {
+            text-decoration: none;
+            color: rgb(253, 253, 252);
+            margin-right: 10px;
+
+
+        }
+
+        /*((>a:hover) filho de Nav(hover)-> ao passar o mouse muda de cor */
+        nav>a:hover {
+            color: rgb(63, 74, 221);
+            font-weight: bold;
+
+
+        }
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: rgb(169, 177, 177);
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        article>aside {
+            background-color: rgba(248, 2, 2, 0.932);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgb(3, 3, 3);
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 4px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> O DIA</h1>
+        <nav>
+
+            <a href="caixa01.html">Home</a>
+            <a href="#">Últimas Noticias</a>
+            <a href="#">Rio de janeiro</a>
+            <a href="#">Diversão</a>
+            <a href="#">Esporte</a>
+            <a href="#">Economia</a>
+
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Economia Política Diversão</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis fugit voluptates maiores magnam.
+                    Perspiciatis, soluta? Dolore laudantium numquam id, odit similique labore vel, fugiat officia
+                    quisquam sapiente nostrum nobis voluptatem.</p>
+                <aside>
+                    <p>Artigo escrito por jesus</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <p>Desenvolvido por alexandre lima</p>
+    </footer>
+
+</body>
+
+</html>
